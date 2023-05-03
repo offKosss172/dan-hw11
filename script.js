@@ -30,10 +30,10 @@ else{
    
     }
 btn.onclick = function(){
-    if(inputFirst.value === inputSecond.value && inputFirst.value === !""){
+    if(inputFirst.value !== "" && inputFirst.value === inputSecond.value ){
     alert('You are welcome')
     }
-    if(inputFirst.value === "")
+    else if(inputFirst.value === "")
     {let emptyPasword = document.createElement("span");
     emptyPasword.className = "error-password";
     inputSecond.parentNode.appendChild(emptyPasword);
